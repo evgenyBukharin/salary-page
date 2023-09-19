@@ -1,6 +1,6 @@
 :root {
 	// base
-	--font-family: "Golos Text", sans-serif;
+	--font-family: "Montserrat", sans-serif;
 	--content-width: 1300px;
 	--container-offset: 15px;
 	--container-width: calc(var(--content-width) + (var(--container-offset) * 2));
@@ -10,4 +10,9 @@
 	--black-color: #1e1e1e;
 	--hero-border-color: rgba(20, 38, 71, 0.2);
 	--dark-blue-color: #126797;
+	--darkest-blue-color: #142647;
+	--green-color: #129757;
+	--light-blue-color: #0bbbef;
+	--yellow-color: #c6c945;
+	--red-color: #c22222;
 }

@@ -6,26 +6,59 @@
 					<div class="hero__cell hero__cell-header hero__col-employee">Сотрудник</div>
 					<div class="hero__cell hero__cell-header hero__col-salary">Оклад</div>
 					<div class="hero__cell hero__cell-header hero__col-salary-official">
-						Оклад <span class="hero__text-upper">оф.</span>
+						<div class="hero__container-cell-inner">Оклад <span class="hero__text-upper">оф.</span></div>
 					</div>
 					<div class="hero__cell hero__cell-header hero__col-stopped">Удержано</div>
 					<div class="hero__cell hero__cell-header hero__col-prepaid">Аванс</div>
 					<div class="hero__cell hero__cell-header hero__col-toBePaid">К выплате</div>
 					<div class="hero__cell hero__cell-header hero__col-bonus">Премия</div>
 					<div class="hero__cell hero__cell-header hero__col-summ">Сумма</div>
-					<div class="hero__cell hero__cell-header hero__col-medical">БЛ</div>
-					<div class="hero__cell hero__cell-header hero__col-vacation">Отпуск</div>
-					<div class="hero__cell hero__cell-header hero__col-date">Месяц + стрелки</div>
+					<div class="hero__cell hero__cell-header hero__col-medical">
+						<img
+							src="./img/ill.svg"
+							class="image hero__icon-ill"
+							width="30"
+							height="30"
+							alt="Иконка больного"
+						/>
+					</div>
+					<div class="hero__cell hero__cell-header hero__col-vacation">
+						<img
+							src="./img/palm.svg"
+							class="image hero__icon-palm"
+							width="30"
+							height="35"
+							alt="Иконка пальмы"
+						/>
+					</div>
+					<div class="hero__cell hero__cell-header hero__cell-header-date hero__col-date">
+						<button class="btn-reset hero__button-arrow hero__button-prev-header">
+							<img
+								src="./img/button.svg"
+								class="image hero__icon-arrow hero__icon-arrow-reverse"
+								width="25"
+								height="25"
+								alt="Стрелка влево"
+							/>
+						</button>
+						<span class="hero__text-date">сентябрь 2023</span>
+						<button class="btn-reset hero__button-arrow hero__button-next-header">
+							<img
+								src="./img/button.svg"
+								class="image hero__icon-arrow"
+								width="25"
+								height="25"
+								alt="Стрелка вправо"
+							/>
+						</button>
+					</div>
 				</div>
 			</div>
 			<div class="swiper hero__slider">
 				<div class="swiper-wrapper hero__wrapper"></div>
 			</div>
 			<div class="hero__footer">
-				<p class="hero__text-all hero__text-footer">
-					Всего:
-					<span class="hero__text-footer hero__text-all-value"></span>
-				</p>
+				<button class="btn-reset hero__button-reestr">Сформировать реестр</button>
 				<div class="hero__text-pages hero__text-footer">
 					<span class="hero__text-page">
 						Страницы:

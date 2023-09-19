@@ -1,5 +1,25 @@
 .hero {
 	padding-top: 40px;
+	padding-bottom: 40px;
+	&__container {
+		&-cell-inner {
+			position: relative;
+			padding-right: 16px;
+		}
+		&-employee {
+			display: flex;
+			gap: 8px;
+		}
+		&-status {
+			display: flex;
+			gap: 5px;
+			width: 35px;
+		}
+		&-slider-bullets {
+			padding-left: 1px;
+			padding-right: 1px;
+		}
+	}
 	&__item {
 		width: 100%;
 		padding: 7px 9px 4px 8px;
@@ -32,6 +52,19 @@
 		border-radius: 5px;
 		background: var(--dark-blue-color);
 		text-decoration: none;
+		&-reestr {
+			padding: 8px 15px;
+			border-radius: 5px;
+			background: var(--light-blue-color);
+			color: var(--white-color);
+			font-family: "Montserrat";
+			font-size: 10px;
+			font-weight: 500;
+			line-height: normal;
+		}
+		&-arrow {
+			display: flex;
+		}
 	}
 	&__list {
 		display: flex;
@@ -43,7 +76,7 @@
 		height: fit-content;
 		outline: 1px solid var(--hero-border-color);
 		outline-offset: -1px;
-		border-radius: 10px;
+		border-radius: 5px;
 		max-width: 1300px;
 	}
 	&__header {
@@ -132,24 +165,24 @@
 	&__row {
 		display: flex;
 		&:not(:first-child) {
-			box-shadow: 0 -1px 0 var(--border-color);
+			box-shadow: 0 -1px 0 var(--hero-border-color);
 		}
-		& .hero__cell {
-			&:first-child {
-				padding-left: 9px;
-				border-left: 1px solid transparent !important;
-			}
-			&:last-child {
-				border-right: 1px solid transparent !important;
-				padding-right: 9px;
-			}
-		}
+		// & .hero__cell {
+		// 	&:first-child {
+		// 		padding-left: 9px;
+		// 		border-left: 1px solid transparent !important;
+		// 	}
+		// 	&:last-child {
+		// 		border-right: 1px solid transparent !important;
+		// 		padding-right: 9px;
+		// 	}
+		// }
 	}
 	&__cell {
 		display: flex;
 		align-items: center;
 		text-align: center;
-		padding: 19px 6px;
+		padding: 19px 3px;
 		font-size: 14px;
 		line-height: 17px;
 		letter-spacing: 0em;
@@ -157,18 +190,40 @@
 		border-right: 1px solid transparent;
 		border-left: 1px solid transparent;
 		transition: border 0.2s ease;
+		&-employee {
+			justify-content: space-between;
+			padding-left: 13px;
+			padding-right: 20px;
+			gap: 10px;
+		}
+		&-date {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			gap: 15px;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
 		&-header {
 			position: relative;
 			font-size: 12px;
 			font-weight: 700;
-			padding-top: 20px;
-			padding-bottom: 20px;
+			padding-top: 10px;
+			padding-bottom: 15px;
 			color: var(--white-color);
 			justify-content: center;
 			&-hide-after {
 				&::after {
 					opacity: 0;
 				}
+			}
+			&-date {
+				background: var(--white-color);
+				border: 2px solid var(--dark-blue-color) !important;
+				border-right: 2px solid var(--dark-blue-color) !important;
+				border-radius: 5px;
+				display: flex;
+				justify-content: center;
 			}
 			&:not(:last-child) {
 				&::after {
@@ -177,7 +232,7 @@
 					right: -1px;
 					top: 50%;
 					transform: translateY(-50%);
-					background: var(--border-color);
+					background: var(--hero-border-color);
 					width: 1px;
 					height: 55%;
 					transition: opacity 0.4s ease;
@@ -185,8 +240,8 @@
 			}
 		}
 		&-hovered {
-			border-right: 1px solid var(--border-color);
-			border-left: 1px solid var(--border-color);
+			border-right: 1px solid var(--hero-border-color);
+			border-left: 1px solid var(--hero-border-color);
 		}
 		& a {
 			font-size: inherit;
@@ -224,6 +279,21 @@
 			text-transform: uppercase;
 			margin: 0;
 		}
+		&-upper {
+			position: absolute;
+			font-size: 7px;
+			top: -4px;
+			right: 0;
+		}
+		&-date {
+			color: var(--darkest-blue-color);
+			text-align: center;
+			font-family: "Golos Text";
+			font-size: 16px;
+			font-weight: 500;
+			line-height: normal;
+			margin: 0 14px;
+		}
 	}
 	&__button {
 		&-control {
@@ -256,6 +326,24 @@
 				font-weight: 700;
 			}
 		}
+		&-date {
+			padding: 4px 10px;
+			border-radius: 5px;
+			color: var(--white-color);
+			font-family: "Golos Text";
+			font-size: 12px;
+			font-weight: 500;
+			line-height: normal;
+			&-save {
+				background: var(--green-color);
+			}
+			&-auto {
+				background: var(--yellow-color);
+			}
+			&-red {
+				background: var(--red-color);
+			}
+		}
 	}
 	&__pagination {
 		max-width: 99px;
@@ -278,7 +366,8 @@
 		transition: color 0.3s linear;
 		text-align: center;
 		margin-right: 20px !important;
-		min-width: 20.8px;
+		min-width: 33px;
+		margin: 0 !important;
 		&:last-child {
 			margin-right: 0 !important;
 		}
@@ -287,7 +376,7 @@
 				content: "";
 				position: absolute;
 				top: 0;
-				left: -13px;
+				left: 0;
 				height: 100%;
 				width: 1px;
 				background: var(--black-color);
@@ -298,14 +387,14 @@
 			content: "";
 			position: absolute;
 			top: 0;
-			right: -49%;
+			right: -1px;
 			height: 100%;
 			width: 1px;
 			background: var(--black-color);
 			font-weight: 700;
 		}
 		&-active {
-			color: var(--blue-color);
+			color: var(--dark-blue-color);
 		}
 	}
 	&__select {
@@ -321,5 +410,54 @@
 		background-size: 17px 9px;
 		background-position-x: 75%;
 		background-position-y: 50%;
+	}
+	&__icon {
+		&-arrow {
+			&-reverse {
+				rotate: 180deg;
+			}
+		}
+	}
+	&__name {
+		color: var(--darkest-blue-color);
+		font-family: "Golos Text";
+		font-size: 12px;
+		font-weight: 500;
+		line-height: normal;
+		margin: 0;
+		margin-bottom: 5px;
+		text-align: left;
+	}
+	&__job {
+		color: rgba(20, 38, 71, 0.5);
+		font-family: "Golos Text";
+		font-size: 8px;
+		font-weight: 500;
+		line-height: normal;
+		margin: 0;
+		text-align: left;
+		max-width: 160px;
+		min-height: 20px;
+	}
+	&__status {
+		height: 15px;
+		color: var(--white-color);
+		font-family: "Montserrat";
+		font-size: 8px;
+		font-weight: 500;
+		line-height: normal;
+		border-radius: 5px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 8px 4px;
+		&-green {
+			background: var(--green-color);
+			margin-right: auto;
+		}
+		&-blue {
+			background: var(--light-blue-color);
+			margin-left: auto;
+		}
 	}
 }
