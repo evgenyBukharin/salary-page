@@ -37,6 +37,9 @@
 		&-black {
 			background: var(--black-color);
 		}
+		&-blue {
+			background: var(--dark-2-blue-color);
+		}
 		&-lightblue {
 			background: var(--light-blue-color);
 		}
@@ -45,6 +48,18 @@
 		}
 		&-darkestblue {
 			background: var(--darkest-blue-color);
+		}
+		&-pink {
+			background: var(--pink-color);
+		}
+		&-orange {
+			background: var(--orange-color);
+		}
+		&-lightorange {
+			background: var(--light-orange-color);
+		}
+		&-grey {
+			background: var(--dark-grey-color);
 		}
 	}
 	&__title {
@@ -86,5 +101,31 @@
 		align-items: center;
 		justify-content: space-between;
 		padding-right: 10px;
+	}
+	&-team {
+		margin-bottom: 50px;
+		& .stats {
+			&__list {
+				justify-content: center;
+			}
+			&__container {
+				&-icon {
+					background: transparent;
+				}
+			}
+		}
+	}
+	&-result {
+		margin-bottom: 60px;
+		& .stats {
+			&__container {
+				&-icon {
+					background: transparent;
+				}
+			}
+			&__list {
+				flex-wrap: wrap;
+			}
+		}
 	}
 }

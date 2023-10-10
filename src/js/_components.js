@@ -5,3 +5,4 @@ import "./components/employee-tabs";
 import "./components/employee-accordion";
 import "./components/employee-rows";
 import "./components/employee-scrollbar";
+import "./components/team-filter";

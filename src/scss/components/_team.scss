@@ -1,0 +1,92 @@
+.team {
+	&__container {
+		&-row {
+			margin-right: 14px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		&-scroll {
+			max-height: 516px;
+		}
+	}
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		gap: 20px;
+	}
+	&__item {
+		grid-column: 4 span;
+		border-radius: 10px;
+		background: var(--grey-color);
+		padding: 20px 46px 38px 20px;
+		&-blue {
+			color: var(--darker-blue-color);
+		}
+		&-purple {
+			color: var(--purple-color);
+		}
+		&-orange {
+			color: var(--orange-color);
+		}
+	}
+	&__title {
+		color: var(--real-black-color);
+		font-family: "Golos Text", sans-serif;
+		font-size: 20px;
+		font-weight: 500;
+		line-height: normal;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 23px;
+	}
+	&__filter {
+		margin-right: 5px;
+		cursor: pointer;
+		&-reversed {
+			& .team__arrow {
+				&-top {
+					fill: var(--black-color);
+				}
+				&-bottom {
+					fill: #4f687c;
+				}
+			}
+		}
+	}
+	&__arrow {
+		transition: fill 0.3s ease;
+	}
+	&__avatar {
+		border-radius: 100%;
+		margin-right: 23px;
+	}
+	&__name {
+		margin-bottom: 7px;
+		color: var(--darkest-blue-color);
+		font-family: "Golos Text", sans-serif;
+		font-size: 12px;
+		font-weight: 500;
+		line-height: normal;
+	}
+	&__rows {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+	}
+	&__row {
+		display: flex;
+		align-items: center;
+	}
+	&__persent {
+		font-family: "Golos Text", sans-serif;
+		font-size: 28px;
+		font-weight: 500;
+		line-height: normal;
+	}
+	& .simplebar-track {
+		right: -32px;
+		bottom: -18px;
+	}
+}
