@@ -1,0 +1,43 @@
+.accordion {
+	width: 100%;
+	position: relative;
+	&__control {
+		cursor: pointer;
+	}
+	&__content {
+		box-sizing: content-box;
+		max-height: 0;
+		opacity: 0;
+		overflow: hidden;
+		padding-top: 0;
+		will-change: max-height;
+		transition: all 0.4s ease, opacity 0.4s ease 0.2s;
+		&-open {
+			opacity: 1;
+		}
+		& .employee__col-mark {
+			cursor: pointer;
+		}
+	}
+	&-open {
+		& .employee__triangle {
+			rotate: 180deg;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.accordion {
+		&__content {
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.accordion {
+		&__content {
+			&-open {
+			}
+		}
+	}
+}

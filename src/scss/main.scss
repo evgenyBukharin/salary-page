@@ -5,6 +5,11 @@
 @import "settings";
 
 // подключения компонентов страницы
+@import "./components/loader";
+@import "./components/title";
 @import "./components/header";
 @import "./components/hero";
-@import "./components/loader";
+@import "./components/stats";
+@import "./components/employee";
+@import "./components/accordion";
+@import "./components/simplebar";
