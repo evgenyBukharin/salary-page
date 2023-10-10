@@ -1,2 +1,89 @@
-.result {
+.res {
+	&__table {
+		border-radius: 5px 5px 18px 18px;
+		background: var(--white-color);
+		overflow: hidden;
+		border: 1px solid var(--hero-border-color);
+		font-family: "Golos Text", sans-serif;
+	}
+	&__row {
+		display: flex;
+		color: #1426477d;
+		font-size: 12px;
+		font-weight: 500;
+		line-height: normal;
+		&-header {
+			background: var(--result-header-color);
+			color: var(--white-color);
+			text-align: center;
+			font-size: 12px;
+			font-weight: 700;
+			line-height: normal;
+			& .res__cell {
+				height: 35px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: 0;
+			}
+		}
+		& .res__col:not(:last-child) {
+			border-right: 1px solid var(--hero-border-color);
+		}
+		&-self {
+			font-size: 14px;
+			color: var(--darkest-blue-color);
+			& .res__cell {
+				&-inner {
+					color: var(--real-black-color);
+					&-link {
+						color: var(--darkest-blue-color);
+					}
+				}
+			}
+		}
+		&:not(:last-child) {
+			border-bottom: 1px solid var(--hero-border-color);
+		}
+	}
+	&__col {
+		width: 100%;
+		&-employee {
+			max-width: 200px;
+			padding: 13px 20px;
+		}
+		&-month {
+			max-width: 84px;
+			display: flex;
+		}
+		&-summ {
+			max-width: 84px;
+			display: flex;
+			& .res__cell-inner {
+				color: var(--real-black-color);
+			}
+		}
+	}
+	&__cell {
+		&-inner {
+			max-width: 42px;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: rgba(0, 0, 0, 0.6);
+			&-link {
+				border-right: 1px solid var(--hero-border-color);
+				color: #1426477d;
+				text-underline-offset: 1px;
+			}
+		}
+		&-empty {
+			background: #ece5e5;
+			border-right: none !important;
+			& * {
+				display: none;
+			}
+		}
+	}
 }
