@@ -1,231 +1,303 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
 	<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<meta name="theme-color" content="#111111" />
-	<title>Salary-page</title>
-	<!-- <link rel="preload" href="fonts/MontserratAlternates-Bold.woff2" as="font" type="font/woff2" crossorigin /> -->
-	<link rel="stylesheet" href="css/vendor.css" />
-	<link rel="stylesheet" href="css/main.css" />
-	<script defer src="js/main.js"></script>
-</head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="theme-color" content="#111111" />
+		<title>Salary-page</title>
+		<!-- <link rel="preload" href="fonts/MontserratAlternates-Bold.woff2" as="font" type="font/woff2" crossorigin /> -->
+		<link rel="stylesheet" href="css/vendor.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<script defer src="js/main.js"></script>
+	</head>
 
 	<body class="page__body">
 		<div class="site-container">
 			<header class="header">
-	<div class="container header__container"></div>
-</header>
+				<div class="container header__container"></div>
+			</header>
 
 			<main class="main">
 				<section class="stats">
-	<div class="container stats__container">
-		<ul class="list-reset stats__list">
-			<li class="stats__item stats__item-green">
-				<div class="stats__header">
-					<h4 class="stats__heading stats__subtitle stats__subtitle-header">Сумма сделок</h4>
-					<div class="stats__container-icon">
-						<img src="./img/bag.svg" class="image" width="28" height="30" alt="Иконка сумки" />
+					<div class="container stats__container">
+						<ul class="list-reset stats__list">
+							<li class="stats__item stats__item-green">
+								<div class="stats__header">
+									<h4 class="stats__heading stats__subtitle stats__subtitle-header">Сумма сделок</h4>
+									<div class="stats__container-icon">
+										<img
+											src="./img/bag.svg"
+											class="image"
+											width="28"
+											height="30"
+											alt="Иконка сумки"
+										/>
+									</div>
+								</div>
+								<div class="stats__body">
+									<h3 class="stats__heading stats__title">
+										<span class="stats__value">9 999 999 999</span><span> ₽</span>
+									</h3>
+								</div>
+								<a href="#" class="stats__footer">
+									<h5 class="stats__heading stats__subtitle stats__subtitle-footer">
+										Результаты месяца
+									</h5>
+									<img
+										src="./img/right-arrow.svg"
+										class="image stats__icon-arrow"
+										width="10"
+										height="15"
+										alt="Иконка стрелки"
+									/>
+								</a>
+							</li>
+							<li class="stats__item stats__item-black">
+								<div class="stats__header">
+									<h4 class="stats__heading stats__subtitle stats__subtitle-header">ФОТ</h4>
+									<div class="stats__container-icon stats__container-icon-text">8</div>
+								</div>
+								<div class="stats__body">
+									<h3 class="stats__heading stats__title">
+										<span class="stats__value">9 999 999 999</span><span> ₽</span>
+									</h3>
+								</div>
+								<a href="#" class="stats__footer">
+									<h5 class="stats__heading stats__subtitle stats__subtitle-footer">
+										Всего начислено
+									</h5>
+									<img
+										src="./img/right-arrow.svg"
+										class="image stats__icon-arrow"
+										width="10"
+										height="15"
+										alt="Иконка стрелки"
+									/>
+								</a>
+							</li>
+							<li class="stats__item stats__item-lightblue">
+								<div class="stats__header">
+									<h4 class="stats__heading stats__subtitle stats__subtitle-header">Лицензии</h4>
+									<div class="stats__container-icon">
+										<img
+											src="./img/group.svg"
+											class="image"
+											width="35"
+											height="22"
+											alt="Иконка группы людей"
+										/>
+									</div>
+								</div>
+								<div class="stats__body">
+									<h3 class="stats__heading stats__title">
+										<span class="stats__value">9 999 999 999</span><span> ₽</span>
+									</h3>
+								</div>
+								<a href="#" class="stats__footer">
+									<h5 class="stats__heading stats__subtitle stats__subtitle-footer">
+										Сумма за месяц
+									</h5>
+									<img
+										src="./img/right-arrow.svg"
+										class="image stats__icon-arrow"
+										width="10"
+										height="15"
+										alt="Иконка стрелки"
+									/>
+								</a>
+							</li>
+							<li class="stats__item stats__item-darkblue">
+								<div class="stats__header">
+									<h4 class="stats__heading stats__subtitle stats__subtitle-header">Налоги</h4>
+									<div class="stats__container-icon">
+										<img
+											src="./img/exit.svg"
+											class="image"
+											width="24"
+											height="27"
+											alt="Иконка выхода"
+										/>
+									</div>
+								</div>
+								<div class="stats__body">
+									<h3 class="stats__heading stats__title">
+										<span class="stats__value">9 999 999 999</span><span> ₽</span>
+									</h3>
+								</div>
+								<a href="#" class="stats__footer">
+									<h5 class="stats__heading stats__subtitle stats__subtitle-footer">
+										Фонды и начисления
+									</h5>
+									<img
+										src="./img/right-arrow.svg"
+										class="image stats__icon-arrow"
+										width="10"
+										height="15"
+										alt="Иконка стрелки"
+									/>
+								</a>
+							</li>
+							<li class="stats__item stats__item-darkestblue">
+								<div class="stats__header">
+									<h4 class="stats__heading stats__subtitle stats__subtitle-header">
+										Выработка руб / час
+									</h4>
+									<div class="stats__container-icon">
+										<img
+											src="./img/user.svg"
+											class="image"
+											width="40"
+											height="40"
+											alt="Иконка пользователя"
+										/>
+									</div>
+								</div>
+								<div class="stats__body">
+									<h3 class="stats__heading stats__title">
+										<span class="stats__value">9 999 999 999</span><span> ₽</span>
+									</h3>
+								</div>
+								<a href="#" class="stats__footer">
+									<h5 class="stats__heading stats__subtitle stats__subtitle-footer">
+										Стоимость часа
+									</h5>
+									<img
+										src="./img/right-arrow.svg"
+										class="image stats__icon-arrow"
+										width="10"
+										height="15"
+										alt="Иконка стрелки"
+									/>
+								</a>
+							</li>
+						</ul>
 					</div>
-				</div>
-				<div class="stats__body">
-					<h3 class="stats__heading stats__title">
-						<span class="stats__value">9 999 999 999</span><span> ₽</span>
-					</h3>
-				</div>
-				<a href="#" class="stats__footer">
-					<h5 class="stats__heading stats__subtitle stats__subtitle-footer">Результаты месяца</h5>
-					<img
-						src="./img/right-arrow.svg"
-						class="image stats__icon-arrow"
-						width="10"
-						height="15"
-						alt="Иконка стрелки"
-					/>
-				</a>
-			</li>
-			<li class="stats__item stats__item-black">
-				<div class="stats__header">
-					<h4 class="stats__heading stats__subtitle stats__subtitle-header">ФОТ</h4>
-					<div class="stats__container-icon stats__container-icon-text">8</div>
-				</div>
-				<div class="stats__body">
-					<h3 class="stats__heading stats__title">
-						<span class="stats__value">9 999 999 999</span><span> ₽</span>
-					</h3>
-				</div>
-				<a href="#" class="stats__footer">
-					<h5 class="stats__heading stats__subtitle stats__subtitle-footer">Всего начислено</h5>
-					<img
-						src="./img/right-arrow.svg"
-						class="image stats__icon-arrow"
-						width="10"
-						height="15"
-						alt="Иконка стрелки"
-					/>
-				</a>
-			</li>
-			<li class="stats__item stats__item-lightblue">
-				<div class="stats__header">
-					<h4 class="stats__heading stats__subtitle stats__subtitle-header">Лицензии</h4>
-					<div class="stats__container-icon">
-						<img src="./img/group.svg" class="image" width="35" height="22" alt="Иконка группы людей" />
+				</section>
+				<section class="hero">
+					<div class="container hero__container">
+						<div class="hero__table">
+							<div class="hero__header">
+								<div class="hero__row">
+									<div class="hero__cell hero__cell-header hero__col-employee">Сотрудник</div>
+									<div class="hero__cell hero__cell-header hero__col-salary">Оклад</div>
+									<div class="hero__cell hero__cell-header hero__col-salary-official">
+										<div class="hero__container-cell-inner">
+											Оклад <span class="hero__text-upper">оф.</span>
+										</div>
+									</div>
+									<div class="hero__cell hero__cell-header hero__col-stopped">Удержано</div>
+									<div class="hero__cell hero__cell-header hero__col-prepaid">Аванс</div>
+									<div class="hero__cell hero__cell-header hero__col-toBePaid">К выплате</div>
+									<div class="hero__cell hero__cell-header hero__col-bonus">Премия</div>
+									<div class="hero__cell hero__cell-header hero__col-summ">Сумма</div>
+									<div class="hero__cell hero__cell-header hero__col-medical">
+										<img
+											src="./img/ill.svg"
+											class="image hero__icon-ill"
+											width="30"
+											height="30"
+											alt="Иконка больного"
+										/>
+									</div>
+									<div class="hero__cell hero__cell-header hero__col-vacation">
+										<img
+											src="./img/palm.svg"
+											class="image hero__icon-palm"
+											width="30"
+											height="35"
+											alt="Иконка пальмы"
+										/>
+									</div>
+									<div class="hero__cell hero__cell-header hero__cell-header-date hero__col-date">
+										<button class="btn-reset hero__button-arrow hero__button-prev-header">
+											<img
+												src="./img/button.svg"
+												class="image hero__icon-arrow hero__icon-arrow-reverse"
+												width="25"
+												height="25"
+												alt="Стрелка влево"
+											/>
+										</button>
+										<span class="hero__text-date">сентябрь 2023</span>
+										<button class="btn-reset hero__button-arrow hero__button-next-header">
+											<img
+												src="./img/button.svg"
+												class="image hero__icon-arrow"
+												width="25"
+												height="25"
+												alt="Стрелка вправо"
+											/>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="swiper hero__slider">
+								<div class="swiper-wrapper hero__wrapper"></div>
+							</div>
+							<div class="hero__footer">
+								<button class="btn-reset hero__button-reestr">Сформировать реестр</button>
+								<div class="hero__text-pages hero__text-footer">
+									<span class="hero__text-page">
+										Страницы:
+										<span class="hero__text-page hero__text-page-1 hero__text-page-hidden">1</span>
+									</span>
+									<button class="btn-reset hero__button-control hero__button-prev">Пред</button>
+									<div class="hero__container-slider-bullets swiper">
+										<div class="swiper-wrapper hero__pagination"></div>
+									</div>
+									<button class="btn-reset hero__button-control hero__button-next">След.</button>
+									<button class="btn-reset hero__button-control hero__button-last">Последняя</button>
+								</div>
+								<p class="hero__text-onpage hero__text-footer">
+									На странице:
+									<select class="hero__select select"></select>
+								</p>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="stats__body">
-					<h3 class="stats__heading stats__title">
-						<span class="stats__value">9 999 999 999</span><span> ₽</span>
-					</h3>
-				</div>
-				<a href="#" class="stats__footer">
-					<h5 class="stats__heading stats__subtitle stats__subtitle-footer">Сумма за месяц</h5>
-					<img
-						src="./img/right-arrow.svg"
-						class="image stats__icon-arrow"
-						width="10"
-						height="15"
-						alt="Иконка стрелки"
-					/>
-				</a>
-			</li>
-			<li class="stats__item stats__item-darkblue">
-				<div class="stats__header">
-					<h4 class="stats__heading stats__subtitle stats__subtitle-header">Налоги</h4>
-					<div class="stats__container-icon">
-						<img src="./img/exit.svg" class="image" width="24" height="27" alt="Иконка выхода" />
-					</div>
-				</div>
-				<div class="stats__body">
-					<h3 class="stats__heading stats__title">
-						<span class="stats__value">9 999 999 999</span><span> ₽</span>
-					</h3>
-				</div>
-				<a href="#" class="stats__footer">
-					<h5 class="stats__heading stats__subtitle stats__subtitle-footer">Фонды и начисления</h5>
-					<img
-						src="./img/right-arrow.svg"
-						class="image stats__icon-arrow"
-						width="10"
-						height="15"
-						alt="Иконка стрелки"
-					/>
-				</a>
-			</li>
-			<li class="stats__item stats__item-darkestblue">
-				<div class="stats__header">
-					<h4 class="stats__heading stats__subtitle stats__subtitle-header">Выработка руб / час</h4>
-					<div class="stats__container-icon">
-						<img src="./img/user.svg" class="image" width="40" height="40" alt="Иконка пользователя" />
-					</div>
-				</div>
-				<div class="stats__body">
-					<h3 class="stats__heading stats__title">
-						<span class="stats__value">9 999 999 999</span><span> ₽</span>
-					</h3>
-				</div>
-				<a href="#" class="stats__footer">
-					<h5 class="stats__heading stats__subtitle stats__subtitle-footer">Стоимость часа</h5>
-					<img
-						src="./img/right-arrow.svg"
-						class="image stats__icon-arrow"
-						width="10"
-						height="15"
-						alt="Иконка стрелки"
-					/>
-				</a>
-			</li>
-		</ul>
-	</div>
-</section>
- <section class="hero">
-	<div class="container hero__container">
-		<div class="hero__table">
-			<div class="hero__header">
-				<div class="hero__row">
-					<div class="hero__cell hero__cell-header hero__col-employee">Сотрудник</div>
-					<div class="hero__cell hero__cell-header hero__col-salary">Оклад</div>
-					<div class="hero__cell hero__cell-header hero__col-salary-official">
-						<div class="hero__container-cell-inner">Оклад <span class="hero__text-upper">оф.</span></div>
-					</div>
-					<div class="hero__cell hero__cell-header hero__col-stopped">Удержано</div>
-					<div class="hero__cell hero__cell-header hero__col-prepaid">Аванс</div>
-					<div class="hero__cell hero__cell-header hero__col-toBePaid">К выплате</div>
-					<div class="hero__cell hero__cell-header hero__col-bonus">Премия</div>
-					<div class="hero__cell hero__cell-header hero__col-summ">Сумма</div>
-					<div class="hero__cell hero__cell-header hero__col-medical">
-						<img
-							src="./img/ill.svg"
-							class="image hero__icon-ill"
-							width="30"
-							height="30"
-							alt="Иконка больного"
-						/>
-					</div>
-					<div class="hero__cell hero__cell-header hero__col-vacation">
-						<img
-							src="./img/palm.svg"
-							class="image hero__icon-palm"
-							width="30"
-							height="35"
-							alt="Иконка пальмы"
-						/>
-					</div>
-					<div class="hero__cell hero__cell-header hero__cell-header-date hero__col-date">
-						<button class="btn-reset hero__button-arrow hero__button-prev-header">
-							<img
-								src="./img/button.svg"
-								class="image hero__icon-arrow hero__icon-arrow-reverse"
-								width="25"
-								height="25"
-								alt="Стрелка влево"
-							/>
-						</button>
-						<span class="hero__text-date">сентябрь 2023</span>
-						<button class="btn-reset hero__button-arrow hero__button-next-header">
-							<img
-								src="./img/button.svg"
-								class="image hero__icon-arrow"
-								width="25"
-								height="25"
-								alt="Стрелка вправо"
-							/>
-						</button>
-					</div>
-				</div>
-			</div>
-			<div class="swiper hero__slider">
-				<div class="swiper-wrapper hero__wrapper"></div>
-			</div>
-			<div class="hero__footer">
-				<button class="btn-reset hero__button-reestr">Сформировать реестр</button>
-				<div class="hero__text-pages hero__text-footer">
-					<span class="hero__text-page">
-						Страницы:
-						<span class="hero__text-page hero__text-page-1 hero__text-page-hidden">1</span>
-					</span>
-					<button class="btn-reset hero__button-control hero__button-prev">Пред</button>
-					<div class="hero__container-slider-bullets swiper">
-						<div class="swiper-wrapper hero__pagination"></div>
-					</div>
-					<button class="btn-reset hero__button-control hero__button-next">След.</button>
-					<button class="btn-reset hero__button-control hero__button-last">Последняя</button>
-				</div>
-				<p class="hero__text-onpage hero__text-footer">
-					На странице:
-					<select class="hero__select select"></select>
-				</p>
-			</div>
-		</div>
-	</div>
-</section>
- <section class="loader">
-	<span class="loader__spinner"></span>
-	<h3 class="loader__title">Данные загружаются...</h3>
-	<button class="btn-reset loader__button loader__button-hidden">Закрыть</button>
-</section>
+				</section>
+				<section class="loader">
+					<span class="loader__spinner"></span>
+					<h3 class="loader__title">Данные загружаются...</h3>
+					<button class="btn-reset loader__button loader__button-hidden">Закрыть</button>
+				</section>
 
+				<section class="menu">
+					<div class="container menu__container">
+						<div class="menu__buttons">
+							<div class="menu__button menu__button-date">
+								<img
+									src="./img/calendar.svg"
+									class="image menu__icon-calendar"
+									width="18"
+									height="20"
+									alt="Иконка календарь"
+								/>
+								<input class="menu__input-date" type="text" name="date" readonly />
+							</div>
+							<div class="menu__button menu__button-nav">
+								<img
+									src="./img/nav.svg"
+									class="image menu__icon-nav"
+									width="20"
+									height="20"
+									alt="Иконка навигации"
+								/>
+								<ul class="menu__list list-reset">
+									<li class="menu__item menu__item-active">
+										<a class="menu__link" href="/employee.html">Сотрудник</a>
+									</li>
+									<li class="menu__item"><a class="menu__link" href="/team.html">Команда</a></li>
+									<li class="menu__item"><a class="menu__link" href="/result.html">Результаты</a></li>
+									<li class="menu__item"><a class="menu__link" href="/">Начисления</a></li>
+									<li class="menu__item"><a class="menu__link" href="#">Проекты</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
 			</main>
 		</div>
 	</body>
