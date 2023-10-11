@@ -3,6 +3,7 @@
 	&__container {
 		display: flex;
 		gap: 30px;
+		justify-content: space-between;
 		&-user {
 			padding: 30px 30px 20px 30px;
 			display: flex;

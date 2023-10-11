@@ -1,0 +1,82 @@
+.menu {
+	margin-top: 50px;
+	&__container {
+		display: flex;
+		justify-content: flex-end;
+	}
+	&__buttons {
+		display: flex;
+	}
+	&__button {
+		position: relative;
+		background: #eceff1;
+		width: 58px;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		&-date {
+			border-radius: 10px 0px 0px 10px;
+		}
+		&-nav {
+			border-radius: 0px 10px 10px 0px;
+		}
+	}
+	&__input {
+		&-date {
+			position: absolute;
+			inset: 0;
+			border: none;
+			outline: none;
+			border-radius: 10px 0px 0px 10px;
+			background: transparent;
+			cursor: pointer;
+			appearance: none;
+			color: transparent;
+		}
+	}
+	&__list {
+		position: absolute;
+		bottom: calc(100% + 10px);
+		right: 0;
+		width: 146px;
+		border-radius: 10px;
+		background: rgba(217, 217, 217, 0.8);
+		padding: 10px;
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity 0.3s ease, visibility 0.3s ease;
+		z-index: 1000;
+		&-visible {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+	&__item {
+		padding: 10px 5px;
+		border-radius: 8px;
+		background: var(--result-header-color);
+		transition: background 0.3s ease;
+		&:hover {
+			background: var(--dark-blue-color);
+		}
+		&-active {
+			background: var(--darkest-blue-color) !important;
+		}
+	}
+	&__link {
+		color: var(--white-color);
+		text-align: center;
+		font-family: "Golos Text", sans-serif;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: normal;
+		text-decoration: none;
+		display: block;
+		width: 100%;
+	}
+}
