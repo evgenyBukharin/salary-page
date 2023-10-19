@@ -68,7 +68,7 @@ class Tabs {
 		if (this.nextButton !== null) {
 			this.nextButton.addEventListener("click", () => {
 				let nextId = +this.currentId + 1 == 3 ? 0 : (this.currentId = +this.currentId + 1);
-				document.querySelector(`[data-id="${nextId}"]`).click();
+				document.querySelector(`[data-panel-id="${nextId}"]`).click();
 			});
 		}
 	}
