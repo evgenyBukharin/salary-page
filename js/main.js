@@ -26506,6 +26506,15 @@
 			if (navList) {
 				navList.classList.remove("menu__list-visible");
 			}
+		});
+		const yearButton = document.querySelector(".view-switch");
+		const monthCells = document.querySelectorAll(".month");
+		monthCells.forEach((cell, idx) => {
+			cell.addEventListener("click", () => {
+				document.location.href = `https://b24.opti.ooo/results/team.php?year=${yearButton.innerHTML}&month=${
+					idx + 1
+				}`;
+			});
 		}); // CONCATENATED MODULE: ./src/js/_components.js // CONCATENATED MODULE: ./src/js/main.js
 	})();
 
