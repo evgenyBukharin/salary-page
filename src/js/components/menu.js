@@ -1,4 +1,4 @@
-import { Datepicker, DateRangePicker } from "vanillajs-datepicker";
+import { Datepicker } from "vanillajs-datepicker";
 
 // datepicker global settings
 (function () {
@@ -61,4 +61,12 @@ document.addEventListener("click", () => {
 	if (navList) {
 		navList.classList.remove("menu__list-visible");
 	}
+});
+
+const yearButton = document.querySelector(".view-switch");
+const monthCells = document.querySelectorAll(".month");
+monthCells.forEach((cell, idx) => {
+	cell.addEventListener("click", () => {
+		document.location.href = `https://b24.opti.ooo/results/team.php?year=${yearButton.innerHTML}&month=${idx + 1}`;
+	});
 });
