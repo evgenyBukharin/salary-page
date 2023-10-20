@@ -67,6 +67,6 @@ const yearButton = document.querySelector(".view-switch");
 const monthCells = document.querySelectorAll(".month");
 monthCells.forEach((cell, idx) => {
 	cell.addEventListener("click", () => {
-		document.location.href = `https://b24.opti.ooo/results/team.php?year=${yearButton.innerHTML}&month=${idx + 1}`;
+		document.location.href = `${document.location.href}?year=${yearButton.innerHTML}&month=${idx + 1}`;
 	});
 });

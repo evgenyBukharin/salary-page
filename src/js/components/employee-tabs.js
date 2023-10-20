@@ -85,9 +85,9 @@ class Tabs {
 		this.tabsBtns[oldIndex].classList.remove(this.innerElements.button + "-active");
 		this.tabsBtns[index].classList.add(this.innerElements.button + "-active");
 
-		this.currentId = newTab.getAttribute("data-id");
+		this.currentId = newTab.getAttribute("data-panel-id");
 		// track anim
-		track.style.transform = `translateX(${newTab.getAttribute("data-id") * 100}%)`;
+		track.style.transform = `translateX(${newTab.getAttribute("data-panel-id") * 100}%)`;
 	}
 }
 
