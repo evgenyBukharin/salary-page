@@ -50,6 +50,7 @@ function makeSlider() {
 		<div class="hero__cell hero__col-toBePaid">35 500</div>
 		<div class="hero__cell hero__col-bonus">20 000</div>
 		<div class="hero__cell hero__col-summ">55 550</div>
+		<div class="hero__cell hero__col-notsure">55 550</div>
 		<div class="hero__cell hero__col-medical">55 550</div>
 		<div class="hero__cell hero__col-vacation">55 550</div>
 		<div class="hero__cell hero__cell-date hero__col-date">
@@ -116,6 +117,7 @@ function makeSlider() {
 			heroItem.querySelector(".hero__col-toBePaid").innerHTML = row.money.toBePaid;
 			heroItem.querySelector(".hero__col-bonus").innerHTML = row.money.bonus;
 			heroItem.querySelector(".hero__col-summ").innerHTML = row.money.summ;
+			heroItem.querySelector(".hero__col-notsure").innerHTML = row.money.notsure;
 			heroItem.querySelector(".hero__col-medical").innerHTML = row.money.medical;
 			heroItem.querySelector(".hero__col-vacation").innerHTML = row.money.vacation;
 
